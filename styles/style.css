@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+/* -------GLOBAL STYLING FOR MULTIPLE ELEMENTS--------*/
+/* Basic styling for the button */
+.CoreBtn{
+    display: inline-block;
+    padding: 12px 24px; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: background-color 0.3s;
+    text-transform: capitalize;
+    
+  }
+  .mr-left{
+    margin-left:50px;
+  }
+  .mt-mb{
+    margin:20px auto;
+  }
+  /* Gradient background for the button */
+  .CoreBtn-gradient{
+      background: linear-gradient(to right, #4caf50, #2196f3); /* Adjust gradient colors as needed */
+      
+  }
+  /* Solid background for the button */
+  .CoreBtn-solid{
+    background-color: #ff5722; 
+  }
+  /* Hover effect for the button */
+  .CoreBtn:hover {
+    background-color: #ff4006;
+  }
+  .specialColor{
+    color: #FD6E0A;
+}
+  
+  
+  
+  
+
+
+/* ----------------NAV RELATED STYLE--------- */
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+}
+    
+    
+   
+    
+
+/*---nav tittle...  */
+.navTittle{
+    color:#181818;
+    font-weight: 800;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 45px;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+
+}
+  
+/* navigation */
+nav > ul {
+     /* itself style */
+     padding: 0;
+     margin: 0;
+     min-height: 100%;
+            /* for child */
+     list-style: none;
+     display: flex;
+
+
+    
+}
+   
+nav li{   
+    list-style: none;
+    margin-left: 50px;
+    min-height: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: #474747;
+    display: block;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------HEADER STYLE----------------- */
+header{
+    background:radial-gradient(circle at center, 
+    rgba(144, 190, 109, 0.5) 5%,    /* Light Green */
+    rgba(144, 190, 109, 0.4) 10%,   /* Light Green */
+    rgba(144, 190, 109, 0.3) 20%,   /* Light Green */
+    
+    rgba(173, 216, 230, 0.5) 25%,   /* Light Blue */
+    rgba(173, 216, 230, 0.4) 30%,   /* Light Blue */
+    rgba(173, 216, 230, 0.3) 40%,   /* Light Blue */
+
+    rgba(128, 177, 211, 0.5) 45%,   /* Light Steel Blue */
+    rgba(128, 177, 211, 0.4) 50%,   /* Light Steel Blue */
+    rgba(128, 177, 211, 0.3) 60%,   /* Light Steel Blue */
+
+    rgba(211, 134, 155, 0.5) 65%,   /* Light Rose */
+    rgba(211, 134, 155, 0.4) 70%,   /* Light Rose */
+    rgba(211, 134, 155, 0.3) 80%,   /* Light Rose */
+
+    rgba(197, 179, 88, 0.5) 85%,    /* Light Gold */
+    rgba(197, 179, 88, 0.4) 90%,    /* Light Gold */
+    rgba(197, 179, 88, 0.3) 95%,    /* Light Gold */
+
+    rgba(150, 203, 184, 0.5) 100%   /* Light Jade */
+);
+height: 100vh;
+}
+
+.brand-header{
+   display:flex;
+}
+.tittle-contianer{
+    flex: 1;
+    flex-basis: 0;
+    margin:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-contianer{
+    flex: 1;
+    flex-basis:0;
+}
+.name{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.wave{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+   /* --------------------header style end here  */
+
+   /* --------------------------------------------------------main section start here-------------------------------  */
+
+   .middle-width{
+    width: 1200px;
+    margin: 50px auto;
+   }
+   .about-me{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .about-container {
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .about-content {
+    max-width: 400px;
+  }
+  
+  .about-content > h1{
+    color: #333;
+  }
+  
+  .about-content > p{
+    color: #666;
+    line-height: 1.6;
+  }
+  
+    
+
+
+   
+
+   
+  
+
+    
+  
+    
+  
+     
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------footer style----------- */
+footer{
+    margin-top: 900px;
+}
