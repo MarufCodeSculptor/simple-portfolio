@@ -110,30 +110,30 @@ nav a{
 /* --------------------HEADER STYLE----------------- */
 header{
     background:radial-gradient(circle at center, 
-    rgba(144, 190, 109, 0.5) 5%,    /* Light Green */
-    rgba(144, 190, 109, 0.4) 10%,   /* Light Green */
-    rgba(144, 190, 109, 0.3) 20%,   /* Light Green */
+    rgba(144, 190, 109, 0.5) 5%, 
+    rgba(144, 190, 109, 0.4) 10%,   
+    rgba(144, 190, 109, 0.3) 20%,  
+    rgba(173, 216, 230, 0.5) 25%, 
+    rgba(173, 216, 230, 0.4) 30%,   
+    rgba(173, 216, 230, 0.3) 40%,   
+    rgba(128, 177, 211, 0.5) 45%,   
+    rgba(128, 177, 211, 0.4) 50%,  
+    rgba(128, 177, 211, 0.3) 60%,   
+    rgba(211, 134, 155, 0.5) 65%,   
+    rgba(211, 134, 155, 0.4) 70%,  
+    rgba(211, 134, 155, 0.3) 80%,  
+    rgba(197, 179, 88, 0.5) 85%,   
+    rgba(197, 179, 88, 0.4) 90%,  
+    rgba(197, 179, 88, 0.3) 95%,    
+    rgba(150, 203, 184, 0.5) 100%   
+    );
+    height: 100vh;
+  }
     
-    rgba(173, 216, 230, 0.5) 25%,   /* Light Blue */
-    rgba(173, 216, 230, 0.4) 30%,   /* Light Blue */
-    rgba(173, 216, 230, 0.3) 40%,   /* Light Blue */
 
-    rgba(128, 177, 211, 0.5) 45%,   /* Light Steel Blue */
-    rgba(128, 177, 211, 0.4) 50%,   /* Light Steel Blue */
-    rgba(128, 177, 211, 0.3) 60%,   /* Light Steel Blue */
 
-    rgba(211, 134, 155, 0.5) 65%,   /* Light Rose */
-    rgba(211, 134, 155, 0.4) 70%,   /* Light Rose */
-    rgba(211, 134, 155, 0.3) 80%,   /* Light Rose */
 
-    rgba(197, 179, 88, 0.5) 85%,    /* Light Gold */
-    rgba(197, 179, 88, 0.4) 90%,    /* Light Gold */
-    rgba(197, 179, 88, 0.3) 95%,    /* Light Gold */
 
-    rgba(150, 203, 184, 0.5) 100%   /* Light Jade */
-);
-height: 100vh;
-}
 
 .brand-header{
    display:flex;
@@ -169,31 +169,39 @@ height: 100vh;
    .about-me{
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     
    }
    .about-container {
-    width: 600px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+     background-color: #fff;
+     padding: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+    
+    
   }
-  
+  .photo-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
+    border: 1px solid red;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
   }
-  
-  .about-content {
-    max-width: 400px;
+  .profile-image:hover {
+    transform: scale(1.1);
   }
-  
+  .about-content{
+     text-align:justify;
+     padding: 20px;
+  }
   .about-content > h1{
     color: #333;
   }
@@ -202,6 +210,100 @@ height: 100vh;
     color: #666;
     line-height: 1.6;
   }
+  /* about section footer content */
+  .parent-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 2px solid #ccc;
+  }
+  .child-element{
+    padding: 10px;
+    flex:1;
+    text-align:center;
+  }
+  .child-element h2{
+    font-size: 16px;
+    font-weight: bolder;
+
+  }
+  .child-element h4{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .light-color{
+    color:#333333;
+  }
+  /* ---------------------------------Project Highlights--------------------- */
+  .content-wrapper {
+    width: 1200px;
+    margin: auto;
+  }
+  
+  .content-wrapper  h2 {
+    color: #333; 
+    display: block;
+    text-align: center;
+    font-size: 35px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   text-transform: capitalize;
+  }
+  
+  .content-wrapper > p {
+    color: #666;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+   text-transform: capitalize;
+   margin: 40px 0;
+
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    flex: 1;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+  }
+    
+  
+  .card img {
+    border: 2px solid #b5c4d4; /* Customize border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    
+   
+  }
+  
+  .card h4 {
+    color: #007bff; /* Customize heading color */
+    font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+  }
+  
+  .card p {
+    color: #333; /* Customize paragraph color */
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+    
+  }
+    
   
     
 
